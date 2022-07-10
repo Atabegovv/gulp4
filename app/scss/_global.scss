@@ -1,0 +1,52 @@
+html{
+    box-sizing: border-box;
+    
+ }
+ *, *::before, *::after{
+    box-sizing: inherit;
+ }
+ body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+ }
+ ol, ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ a{
+    text-decoration: none;
+ }
+ h1, h2, h3, h4, h5, h6{
+   margin: 16px 0;
+ }
+ .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+ .container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 30px;
+ }
+
+html,
+body{
+   height: 100%;
+}
+body{
+   display: flex;
+   flex-direction: column;
+}
+header{
+   flex: 0 0 auto;
+}
+section{
+   flex: 1 0 auto;
+}
+footer{
+   flex: 0 0 auto;
+}
+
