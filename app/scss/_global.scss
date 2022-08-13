@@ -1,52 +1,47 @@
 html{
-    box-sizing: border-box;
-    
- }
- *, *::before, *::after{
-    box-sizing: inherit;
- }
- body {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1;
- }
- ol, ul, li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
- a{
-    text-decoration: none;
- }
- h1, h2, h3, h4, h5, h6{
-   margin: 16px 0;
- }
- .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
- }
- .container-fluid{
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 30px;
- }
-
-html,
-body{
-   height: 100%;
+   box-sizing: border-box;
+   
 }
-body{
-   display: flex;
-   flex-direction: column;
+*, *::before, *::after{
+   box-sizing: inherit;
 }
-header{
-   flex: 0 0 auto;
+body {
+   font-family: 'SF Pro Display' , sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1;
+   overflow-x: hidden;
+   min-width: 320px;
 }
-section{
-   flex: 1 0 auto;
+ol, ul, li{
+   list-style: none;
+   margin: 0;
+   padding: 0;
 }
-footer{
-   flex: 0 0 auto;
+a{
+   text-decoration: none;
+   color: inherit;
 }
-
+img {
+  max-width: 100%;
+  display: block;
+}
+body,h1,h2,h3,h4,h5,h6,p,
+figure,figcaption,blockquote,
+dl,dd {
+  margin: 0;
+  font-weight: 400;
+}
+input,button,textarea,select {
+  font: inherit;
+}
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.container-fluid{
+   max-width: 1920px;
+   margin: 0 auto;
+   padding: 0 30px;
+}

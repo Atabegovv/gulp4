@@ -24,6 +24,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^3.0.0",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
     "jquery-form-styler": "^2.0.2",
     "magnific-popup": "^1.1.0",

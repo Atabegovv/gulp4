@@ -54,6 +54,7 @@ function scripts(){
         'node_modules/rateyo/src/jquery.rateyo.js',
         'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -70,6 +71,7 @@ function styleLibs(){
     'node_modules/rateyo/src/jquery.rateyo.css',
     'node_modules/@fancyapps/ui/dist/fancybox.css',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+    'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
   ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -79,10 +81,10 @@ function styleLibs(){
 
 function styles(){
     return src('app/scss/**/*.scss')
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(concat('style.min.css'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
             grid: true,
