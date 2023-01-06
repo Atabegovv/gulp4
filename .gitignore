@@ -2,7 +2,12 @@
 .AppleDouble
 .LSOverride
 .vs
+.idea/
+.idea/*
+*.sublime*
 
+build/
+npm-debug.*
 npm-shrinkwrap.json
 package-lock.json
 

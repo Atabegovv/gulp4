@@ -1,6 +1,5 @@
 html{
-   box-sizing: border-box;
-   
+   box-sizing: border-box;  
 }
 *, *::before, *::after{
    box-sizing: inherit;
@@ -26,6 +25,10 @@ img {
   max-width: 100%;
   display: block;
 }
+video{
+   display: block;
+   width: 100%;
+}
 body,h1,h2,h3,h4,h5,h6,p,
 figure,figcaption,blockquote,
 dl,dd {
@@ -34,6 +37,21 @@ dl,dd {
 }
 input,button,textarea,select {
   font: inherit;
+}
+input,button{
+   border: none;
+   outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none !important;
+   margin: 0;
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+   appearance: none;
+   -moz-appearance: textfield;
 }
 .container{
    max-width: 1200px;
