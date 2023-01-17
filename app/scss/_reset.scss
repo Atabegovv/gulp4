@@ -1,0 +1,42 @@
+html{
+  box-sizing: border-box;  
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+ol, ul, li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,
+figure,figcaption,blockquote,
+dl,dd {
+ margin: 0;
+ font-weight: 400;
+}
+input,button,textarea,select {
+ font: inherit;
+}
+input,button{
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}

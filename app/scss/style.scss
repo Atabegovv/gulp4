@@ -1,6 +1,7 @@
-@import 'global';
-@import 'fonts';
 @import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
 
 
 
@@ -12,5 +13,5 @@
 
 
 
-// media requests
+/* media requests */
 @import 'media';

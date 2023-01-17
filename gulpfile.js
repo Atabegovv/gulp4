@@ -31,7 +31,7 @@ function images(){
     .pipe(imagemin(
         [
             imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.mozjpeg({quality: 90, progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
@@ -57,7 +57,7 @@ function scripts(){
         'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'app/js/main.js'
     ])
-    .pipe(concat('main.min.js'))
+    .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
@@ -82,7 +82,7 @@ function styleLibs(){
 function styles(){
     return src('app/scss/**/*.scss')
         // .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         // .pipe(sourcemaps.write())
         .pipe(autoprefixer({
@@ -98,7 +98,7 @@ function build(){
         'app/css/libs.min.css',
         'app/css/style.min.css',
         'app/fonts/**/*',
-        'app/js/main.min.js',
+        'app/js/scripts.min.js',
         'app/*.html'
     ],      {base: 'app'})
             .pipe(dest('dist'))
@@ -106,7 +106,7 @@ function build(){
 
 function watching(){
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+    watch(['app/js/**/*.js', '!app/js/scripts.min.js'], scripts);
     watch("app/*.html").on('change', browserSync.reload);
 }
 

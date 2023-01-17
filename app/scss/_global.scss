@@ -1,9 +1,3 @@
-html{
-   box-sizing: border-box;  
-}
-*, *::before, *::after{
-   box-sizing: inherit;
-}
 body {
    font-family: 'SF Pro Display' , sans-serif;
    font-weight: 400;
@@ -11,48 +5,15 @@ body {
    line-height: 1;
    overflow-x: hidden;
    min-width: 320px;
-}
-ol, ul, li{
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-a{
-   text-decoration: none;
-   color: inherit;
-}
+ }
 img {
-  max-width: 100%;
-  display: block;
-}
-video{
+   display: block;
+   max-width: 100%;
+ }
+ video{
    display: block;
    width: 100%;
-}
-body,h1,h2,h3,h4,h5,h6,p,
-figure,figcaption,blockquote,
-dl,dd {
-  margin: 0;
-  font-weight: 400;
-}
-input,button,textarea,select {
-  font: inherit;
-}
-input,button{
-   border: none;
-   outline: none;
-}
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-   -webkit-appearance: none !important;
-   margin: 0;
-}
-input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
-   appearance: none;
-   -moz-appearance: textfield;
-}
+ }
 .container{
    max-width: 1200px;
    margin: 0 auto;

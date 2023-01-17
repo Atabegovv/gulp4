@@ -4,11 +4,12 @@
 .vs
 .idea/
 .idea/*
-*.sublime*
-
 build/
+*.sublime*
 npm-debug.*
 npm-shrinkwrap.json
 package-lock.json
-
 node_modules/
+
+dist/
+app/css/*
