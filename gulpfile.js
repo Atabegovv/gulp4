@@ -47,15 +47,16 @@ function images(){
 
 function scripts(){
     return src([
-        // 'node_modules/jquery/dist/jquery.js',
-        // 'node_modules/slick-carousel/slick/slick.js',
-        // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-        // 'node_modules/mixitup/dist/mixitup.js',
-        // 'node_modules/rateyo/src/jquery.rateyo.js',
-        // 'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+        // 'node_modules/jquery/dist/jquery.min.js',
+        // 'node_modules/slick-carousel/slick/slick.min.js',
+        // 'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+        // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
         // 'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-        // 'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
-        // 'node_modules/swiper/swiper-bundle.js',
+        // 'node_modules/rateyo/min/jquery.rateyo.min.js',
+        // 'node_modules/mixitup/dist/mixitup.min.js',
+        // 'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+        // 'node_modules/swiper/swiper-bundle.min.js',
+        // 'node_modules/scrollreveal/dist/scrollreveal.min.js',
         'app/js/main.js'
     ])
     .pipe(concat('scripts.min.js'))
@@ -68,12 +69,12 @@ function styleLibs(){
   return src([
     'node_modules/normalize.css/normalize.css',
     // 'node_modules/slick-carousel/slick/slick.css',
-    // 'node_modules/magnific-popup/dist/magnific-popup.css',
-    // 'node_modules/rateyo/src/jquery.rateyo.css',
-    // 'node_modules/@fancyapps/ui/dist/fancybox.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
     // 'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
-    // 'node_modules/swiper/swiper-bundle.css',
+    // 'node_modules/rateyo/min/jquery.rateyo.min.css',
+    // 'node_modules/magnific-popup/dist/magnific-popup.css',
+    // 'node_modules/@fancyapps/ui/dist/fancybox.css',
+    // 'node_modules/swiper/swiper-bundle.min.css',
   ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
